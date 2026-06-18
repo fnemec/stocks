@@ -3,7 +3,7 @@ from datetime import date
 import pandas as pd
 import streamlit as st
 
-COLS = ["ticker", "operacao", "preco", "quantidade", "data"]
+COLS = ["ticker", "operacao", "preco", "quantidade", "data", ""]
 
 def new_empty_df() -> pd.DataFrame:
     return ensure_schema(pd.DataFrame(columns=COLS))
